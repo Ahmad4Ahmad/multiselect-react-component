@@ -1,0 +1,79 @@
+body, p
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.select
+{
+    border-radius: 4px;
+    box-shadow: -0.5px 1px 5px 3px rgb(163, 159, 159, 0.5);
+    max-width: fit-content;
+    width: 100%;
+}
+
+.top
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+ul
+{
+    display: none;
+}
+
+.display
+{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(28.4px * 5);
+    height: 100%;
+    border-radius: 0 0 4px 4px;
+}
+
+li
+{
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+input
+{
+    display: none;
+}
+
+label
+{
+    background-color: rgb(142, 183, 254);
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+    padding-right: 20px;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+input:checked + label
+{
+    background-color: blue;
+}
